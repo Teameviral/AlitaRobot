@@ -5,9 +5,9 @@ import time
 from functools import partial
 from contextlib import suppress
 
-import MashaRoBot.modules.sql.welcome_sql as sql
-import MashaRoBot
-from MashaRoBot import (
+import AlitaRobot.modules.sql.welcome_sql as sql
+import AlitaRobot
+from AlitaRobot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -19,18 +19,18 @@ from MashaRoBot import (
     dispatcher,
     JOIN_LOGGER
 )
-from MashaRoBot.modules.helper_funcs.chat_status import (
+from AlitaRobot.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
 )
-from MashaRoBot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from MashaRoBot.modules.helper_funcs.msg_types import get_welcome_type
-from MashaRoBot.modules.helper_funcs.string_handling import (
+from AlitaRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from AlitaRobot.modules.helper_funcs.msg_types import get_welcome_type
+from AlitaRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from MashaRoBot.modules.log_channel import loggable
-from MashaRoBot.modules.sql.global_bans_sql import is_user_gbanned
+from AlitaRobot.modules.log_channel import loggable
+from AlitaRobot.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
     InlineKeyboardButton,
@@ -42,7 +42,7 @@ from telegram.error import BadRequest
 from telegram.ext import (
     CallbackContext,
     CallbackQueryHandler,
-    CommandHandler,
+    CommandHandler,A
     Filters,
     MessageHandler,
     run_async,
