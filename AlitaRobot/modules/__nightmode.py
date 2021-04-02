@@ -1,10 +1,10 @@
-from MashaRoBot.modules.sql_extended.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
+from AlitaRobot.modules.sql_extended.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
 from telethon.tl.types import ChatBannedRights
 from apscheduler.schedulers.asyncio import AsyncIOScheduler 
 from telethon import functions
 from telethon import types
-from MashaRoBot.events import register
-from MashaRoBot import telethn as tbot
+from AlitaRobot.events import register
+from AlitaRobot import telethn as tbot
 import os
 
 
@@ -75,7 +75,7 @@ async def close_ws(event):
 async def disable_ws(event):
     if event.is_group:
      if not (await is_register_admin(event.input_chat, event.message.sender_id)):
-       await event.reply("⚠️Hai.. You are not admin..You can't use this command..")
+       await event.reply("⚠️Hey.. You are not admin..You can't use this command..")
        return
 
     if not event.is_group:
