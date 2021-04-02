@@ -1,11 +1,11 @@
-from MashaRoBot import telethn as tbot
+from AlitaRobot import telethn as tbot
 import os
 import re
 import bs4
 import requests
 from telethon import types
 from telethon.tl import functions
-from MashaRoBot.events import register
+from AlitaRobot.events import register
 
 langi = "en"
 
