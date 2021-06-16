@@ -1,7 +1,7 @@
 import subprocess
 
-from MashaRoBot import LOGGER, dispatcher
-from MashaRoBot.modules.helper_funcs.chat_status import dev_plus
+from AlitaRobot import LOGGER, dispatcher
+from AlitaRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.ext.dispatcher import run_async
