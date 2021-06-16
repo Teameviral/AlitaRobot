@@ -2,9 +2,9 @@ import sre_constants
 
 import regex
 import telegram
-from MashaRoBot import LOGGER, dispatcher
-from MashaRoBot.modules.disable import DisableAbleMessageHandler
-from MashaRoBot.modules.helper_funcs.regex_helper import infinite_loop_check
+from AlitaRobot import LOGGER, dispatcher
+from AlitaRobot.modules.disable import DisableAbleMessageHandler
+from AlitaRobot.modules.helper_funcs.regex_helper import infinite_loop_check
 from telegram import Update
 from telegram.ext import CallbackContext, Filters, run_async
 
