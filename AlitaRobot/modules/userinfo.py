@@ -13,7 +13,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from MashaRoBot import (
+from AlitaRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -24,15 +24,15 @@ from MashaRoBot import (
     dispatcher,
     sw,
 )
-from MashaRoBot.__main__ import STATS, TOKEN, USER_INFO
-import MashaRoBot.modules.sql.userinfo_sql as sql
-from MashaRoBot.modules.disable import DisableAbleCommandHandler
-from MashaRoBot.modules.sql.global_bans_sql import is_user_gbanned
-from MashaRoBot.modules.sql.afk_sql import is_afk, check_afk_status
-from MashaRoBot.modules.sql.users_sql import get_user_num_chats
-from MashaRoBot.modules.helper_funcs.chat_status import sudo_plus
-from MashaRoBot.modules.helper_funcs.extraction import extract_user
-from MashaRoBot import telethn as MashaTelethonClient, TIGERS, DRAGONS, DEMONS
+from AlitaRobot.__main__ import STATS, TOKEN, USER_INFO
+import AlitaRobot.modules.sql.userinfo_sql as sql
+from AlitaRobot.modules.disable import DisableAbleCommandHandler
+from AlitaRobot.modules.sql.global_bans_sql import is_user_gbanned
+from AlitaRobot.modules.sql.afk_sql import is_afk, check_afk_status
+from AlitaRobot.modules.sql.users_sql import get_user_num_chats
+from AlitaRobot.modules.helper_funcs.chat_status import sudo_plus
+from AlitaRobot.modules.helper_funcs.extraction import extract_user
+from AlitaRobot import telethn as MashaTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):
